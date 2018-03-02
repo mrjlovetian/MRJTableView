@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MRJTableView_Tests' do
+  pod 'MRJTableView', :path => '../'
+  
+  
+end
