@@ -1,5 +1,5 @@
 PODS:
-  - MRJTableView (0.1.0)
+  - MRJTableView (0.1.0.2)
 
 DEPENDENCIES:
   - MRJTableView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MRJTableView: 8636a410771216fe1681f345da4acfa7ef42507a
+  MRJTableView: fba1d76463acc460885eb41011db6f2462a092c8
 
 PODFILE CHECKSUM: e055b1bd4a1e3dc448d9d2bf257b189e8535dc3e
 
