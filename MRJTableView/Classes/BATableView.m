@@ -9,7 +9,7 @@
 #import "BATableView.h"
 #import "BATableViewIndex.h"
 
-@interface BATableView()<BATableViewIndexDelegate>
+@interface BATableView() <BATableViewIndexDelegate>
 
 @property (nonatomic, strong) UILabel *flotageLabel;
 @property (nonatomic, strong) BATableViewIndex *tableViewIndex;
@@ -24,10 +24,10 @@
         self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         [self addSubview:self.tableView];
         
-        self.tableViewIndex = [[BATableViewIndex alloc] initWithFrame:(CGRect){self.tableView.frame.size.width - 20,0,20,frame.size.height}];
+        self.tableViewIndex = [[BATableViewIndex alloc] initWithFrame:(self.tableView.frame.size.width - 20, 0, 20, frame.size.height)];
         [self addSubview:self.tableViewIndex];
         
-        self.flotageLabel = [[UILabel alloc] initWithFrame:(CGRect){(self.bounds.size.width - 64 ) / 2,(self.bounds.size.height - 64) / 2,64,64}];
+        self.flotageLabel = [[UILabel alloc] initWithFrame:(CGRect){(self.bounds.size.width - 64 ) / 2,(self.bounds.size.height - 64) / 2, 64, 64}];
         self.flotageLabel.backgroundColor = RGB(18, 29, 45, 0.9);
         self.flotageLabel.hidden = YES;
         self.flotageLabel.textAlignment = NSTextAlignmentCenter;
